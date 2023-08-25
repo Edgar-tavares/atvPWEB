@@ -1,0 +1,28 @@
+
+const cadastros = [];
+
+function cadastrar() {
+  const nome = prompt("Digite o nome da pessoa (ou um número para encerrar):");
+  
+  
+  if (isNaN(nome)) {
+    return false; 
+  }
+  
+  const numero = prompt("Digite o número do sorteio:");
+  
+  
+  cadastros.push({ nome, numero });
+  return true;
+}
+
+
+while (cadastrar()) {}
+
+const indiceSorteado = Math.floor(Math.random() * cadastros.length);
+
+const nomeSorteado = cadastros[indiceSorteado].nome;
+const numeroSorteado = cadastros[indiceSorteado].numero;
+
+document.write("Nome sorteado: ", nomeSorteado, "<br>");
+document.write("Número sorteado: ", numeroSorteado);
