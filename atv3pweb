@@ -1,0 +1,26 @@
+let input = 'arara'
+
+function IsPalindrom(word){
+    let reverseword = '';
+    let newWord ='';   
+    for(let i = 0; i < word.length; i++){
+        if(word[i]!=''){
+            
+        }
+    }
+    console.log(newWord)
+    for(let i = newWord.length - 1; i >=0 ; i--){
+        reverseword += newWord[i];
+    }
+ 
+       if(newWord == reverseword){
+        console.log(reverseword)
+        console.log("é um palindromo")
+       }
+
+        else{
+            console.log(reverseword)
+            console.log("não é um palindromo")
+        }
+
+}
